@@ -114,7 +114,7 @@ header + p {
 .gallery-item figcaption {
     font-weight: bold;
     color: #ffffff; /* White for dark theme */
-    font-size: 22px;
+    font-size: 19px;
     margin-top: 8px;
     transition: opacity 0.3s ease;
 }
