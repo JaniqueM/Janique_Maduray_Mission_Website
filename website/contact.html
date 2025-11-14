@@ -5,18 +5,23 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="contact.css">
     <title>Janique Maduray Contacts</title>
+    <!-- Google Fonts: Momo Signature, Inter, Rubik 80s Fade -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&family=Momo+Signature&family=Rubik+80s+Fade&display=swap" rel="stylesheet">
+
 </head>
 <body>
 <header>Mind&FaithLink - Janique Maduray</header>
 <p><em>"Empowering Minds, Inspiring Change"</em></p>
 
-<br>
 <video autoplay muted loop id="myVideo">
     <source src="img/2127-155244168.mp4" type="video/mp4">
     Your browser does not support the video tag.
 </video>
+
 <nav>
-    <ul class = "navbar">
+    <ul class="navbar">
         <li><a href="index.html">Home</a></li>
         <li><a href="mission.html">Mission</a></li>
         <li><a href="about.html">About</a></li>
@@ -24,49 +29,45 @@
         <li><a href="gallery.html">Gallery</a></li>
     </ul>
 </nav>
-<div class="text-block">
 
-    <h1><em><u><strong>Contact Janique Maduray:</strong></u></em></h1>    <ul class="contact-list">
+<div class="text-block">
+    <h1><em><u><strong>Contact Janique Maduray:</strong></u></em></h1>
+    <ul class="contact-list">
         <li>Email - j.maduray@alustudent.com</li>
         <li>LinkedIn –
-            <a href="https://www.linkedin.com/in/janiquemaduray" target="_blank">
-            Visit Profile
-            </a>
+            <a href="https://www.linkedin.com/in/janiquemaduray" target="_blank">Visit Profile</a>
         </li>
         <li>Telephone - +27745178464</li>
     </ul>
 </div>
 
-<!DOCTYPE html>
-<html>
-<head>
-    <title>Contact Form</title>
-</head>
-<body>
+<div class="form-block">
+    <h2>Contact / Feedback Form</h2>
 
-<h2>Contact / Feedback Form</h2>
+    <form action="thankyou.html" method="post">
+        <label for="name">Full Name:</label><br>
+        <input type="text" id="name" name="name" required placeholder="Enter your full name"><br><br>
 
-<form action="thankyou.html" method="post">
-    <label for="name">Full Name:</label><br>
-    <input type="text" id="name" name="name" required placeholder="Enter your full name"><br><br>
-    <label for="email">Email Address:</label><br>
-    <input type="email" id="email" name="email" required placeholder="example@email.com"><br><br>
-    <label for="phone">Phone Number (optional):</label><br>
-    <input type="tel" id="phone" name="phone" placeholder="+230 555 0000" pattern="[0-9+ ]+"><br><br>
-    <label for="reason">Reason for Contact:</label><br>
-    <select id="reason" name="reason" required>
-        <option value="">Select a reason</option>
-        <option value="general">General Inquiry</option>
-        <option value="support">Support</option>
-        <option value="feedback">Feedback</option>
-    </select><br><br>
-    <label for="message">Your Message:</label><br>
-    <textarea id="message" name="message" rows="5" required placeholder="Enter your message"></textarea><br><br>
-    <button type="submit">Submit</button>
-</form>
+        <label for="email">Email Address:</label><br>
+        <input type="email" id="email" name="email" required placeholder="example@email.com"><br><br>
 
-</body>
-</html>
+        <label for="phone">Phone Number (optional):</label><br>
+        <input type="tel" id="phone" name="phone" placeholder="+230 555 0000" pattern="[0-9+ ]+"><br><br>
+
+        <label for="reason">Reason for Contact:</label><br>
+        <select id="reason" name="reason" required>
+            <option value="">Select a reason</option>
+            <option value="general">General Inquiry</option>
+            <option value="support">Support</option>
+            <option value="feedback">Feedback</option>
+        </select><br><br>
+
+        <label for="message">Your Message:</label><br>
+        <textarea id="message" name="message" rows="5" required placeholder="Enter your message"></textarea><br><br>
+
+        <button type="submit">Submit</button>
+    </form>
+</div>
 
 </body>
 </html>
