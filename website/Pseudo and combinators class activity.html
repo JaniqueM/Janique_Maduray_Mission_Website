@@ -1,0 +1,33 @@
+<!doctype html>
+<html>
+<head>
+    <meta charset="utf-8" name="viewport" content="width=device-width,initial-scale=1">
+    <title>Pseudo Elements + Combinators</title>
+    <style>
+        body{font-family:system-ui,Arial,sans-serif;padding:16px;}
+        *,*:before,*:after{box-sizing:border-box;outline:1px;padding:1px;max-width:640px}
+        blockquote{margin:1rem;padding:1rem;border-left:12px;padding:13px;background:#f0f0f3e;padding:23px;px;border:3px dashed #ddd}
+        .badge{background:#eee;color:#888;padding:2px 6px;border-radius:9px;font-size:10px;}
+        /*👇 style only shown *before tasks 👇*/
+        p{color:#555;}
+        .intro{color:#0055ff}
+        .intro + p{border:1px dashed #ddd}
+        /*👆 remove or change *before tasks 👆*/
+    </style>
+</head>
+<body>
+<div class="card">
+    <span class="badge">New</span>
+    <h2>Welcome</h2>
+    <p class="intro">First paragraph (watch its first line later).</p>
+    <p>Second paragraph.</p>
+</div>
+
+<p>
+    <input type="checkbox" id="agree"><label for="agree"> I agree</label>
+</p>
+<ul class="list"><li>One</li><li>Two</li><li>Three</li></ul>
+
+<p><a class="tip" href="#">Hover me</a></p>
+</body>
+</html>
