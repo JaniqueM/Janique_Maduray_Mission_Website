@@ -111,6 +111,15 @@ header + p {
     box-shadow: 0 0 15px rgba(255, 255, 255, 0.3);
 }
 
+.gallery-item figcaption {
+    font-weight: bold;
+    color: #ffffff; /* White for dark theme */
+    font-size: 22px;
+    margin-top: 8px;
+    transition: opacity 0.3s ease;
+}
+
+
 /* Footer */
 footer {
     text-align: center;
