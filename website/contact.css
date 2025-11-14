@@ -52,6 +52,9 @@ header + p {
     max-width: 100%;
 }
 
+.contact-list{
+    list-style: none;
+}
 .navbar li {
     margin: 0 1.5rem;
 }
